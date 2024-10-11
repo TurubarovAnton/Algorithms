@@ -24,6 +24,12 @@ public class Tester
         TesSort(new PyramidSort());
     }
 
+    [TestMethod("Тестирование алгоритма сортировки слиянием")]
+    public void TestMergeSort()
+    {
+        TesSort(new MergeSort());
+    }
+
     private void TesSort(ISortAlgorithm algorithm)
     {
         for (int index = 0; index < 100; index++)
